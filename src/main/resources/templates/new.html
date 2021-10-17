@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layaout(~{::section})">
+
+<head>
+<title>this is add contact pages</title>
+</head>
+<body>
+	<section>
+
+
+		<div class="card mr-2 ml-2">
+
+			<div class="card-body">
+
+				<h1 class="text-center">Add Student</h1>
+
+				<div class="container-fluid mt-1">
+
+
+					<div class="row">
+
+						<div class="col-md-9 offset-md-1">
+
+							<form action="#" th:object="${student}" method="post"
+								th:action="@{/save}" class="m-25">
+
+
+								<!--First Name  -->
+
+								<div class="input-group">
+
+
+
+									<input type="text" id="studentName" name="studentName"
+										placeholder="Enter name " required="required"
+										class="form-control" />
+
+
+
+								</div>
+
+								<!--course  -->
+
+
+								<div class="input-group mt-3">
+
+
+
+									<input type="text" id="course" name="course"
+										placeholder="Enter course " required="required"
+										class="form-control" />
+
+
+
+								</div>
+
+								<!--feer -->
+
+								<div class="input-group mt-3">
+
+
+
+									<input type="number" id="fee" name="fee"
+										placeholder="Enter fee" class="form-control" />
+
+
+
+								</div>
+
+
+
+
+
+								<div class="container text-center mt-5 ">
+
+									<button class="btn btn-outline-primary  ">Save Contact</button>
+								</div>
+							</form>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</section>
+</body>
+</html>

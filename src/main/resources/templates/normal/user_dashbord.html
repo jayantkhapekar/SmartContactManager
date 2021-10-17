@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layaout(~{::section})">
+
+<head>
+<title>this is home pages</title>
+</head>
+<body>
+	<section>
+
+
+		<div class="container">
+
+
+			<div class="card">
+
+				<div class="card-body my-5 ">
+
+					<div class="container text-center ">
+
+						<img src="" style="height: 200px; width: 200px"
+							class="my_profile_picture" th:src="@{'/img/contact.png'}"
+							alt="profile_photo" />
+
+					</div>
+
+					<h1 class="text-center mt-3 text-secondary font-weight-light">
+						Star Adding Your Contacts</h1>
+
+					<a th:href="@{/user/add-contact}"
+						class="btn btn-primary text-uppercase mt-4" style="width: 1000px">Add
+						New Contact</a>
+
+				</div>
+
+
+			</div>
+
+		</div>
+		
+		<script>
+		
+		$(document).ready(() => {
+
+			$(".item").removeClass("active");
+			$("#home-link").addClass("active");
+
+		});
+		
+		</script>
+
+	</section>
+</body>
+</html>
